@@ -1,18 +1,18 @@
 {
-  "name": "flower_studio",
+  "name": "testsmartorange",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build --base=/flower_studio/",
+    "build": "vite build --base=/testsmartorange/",
     "preview": "vite preview"
   },
   "devDependencies": {
     "sass": "^1.58.1",
     "vite": "^4.0.0"
   },
-  "author": "Alexander Repeta <alexander.repeta@gmail.com>",
+  "author": "Maryna Skyba",
   "license": "ISC",
   "dependencies": {
     "vite-plugin-full-reload": "^1.0.5",
