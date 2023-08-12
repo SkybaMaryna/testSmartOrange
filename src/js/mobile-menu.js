@@ -1,67 +1,16 @@
-/**
- * mobile_menu
- * this is the neccesary javascript for the mobile menu
- */
-(() => {
-  const maxSize = 768; // pixels
-  const isOpenClass = 'is_open';
+const mobileMenu = document.querySelector('.js-menu-container');
+const openMenuBtn = document.querySelector('.js-open-menu');
+const closeMenuBtn = document.querySelector('.js-close-menu');
 
-  const modalId = 'mobile_menu';
-  const openMobileMenuId = 'open_mobile_menu';
-  const closeMobileMenuId = 'close_mobile_menu';
-  const navigationLinkMobileClass = 'navigations__link_mb';
+const toggleMenu = () => {
+  mobileMenu.classList.toggle('is-open');
+};
 
-  const mobileMenu = document.getElementById(modalId);
-  const openMobileMenu = document.getElementById(openMobileMenuId);
-  const closeMobileMenu = document.getElementById(closeMobileMenuId);
-  const navigationLinks = Array.from(
-    document.getElementsByClassName(navigationLinkMobileClass)
-  );
+openMenuBtn.addEventListener('click', toggleMenu);
+closeMenuBtn.addEventListener('click', toggleMenu);
 
-  const closeMenu = () => {
-    mobileMenu.classList.remove(isOpenClass);
-  };
-
-  const openMenu = () => {
-    mobileMenu.classList.add(isOpenClass);
-  };
-
-  /**
-   * Validate if the window size is greater than the max size
-   * if it is, close the menu
-   */
-  const onResize = () => {
-    const isMaxSizeReached = window.innerWidth > maxSize;
-
-    if (!isMaxSizeReached) return;
-
-    closeMenu();
-  };
-
-  openMobileMenu.addEventListener('click', openMenu);
-  closeMobileMenu.addEventListener('click', closeMenu);
-
-  navigationLinks.forEach(link => {
-    link.addEventListener('click', closeMenu);
-  });
-
-  window.addEventListener('resize', onResize);
-
-  const headerAndHeroContainer = document.getElementById(
-    'header_and_hero_container'
-  );
-
-  const heroImage = document.querySelector('.hero.container');
-
-  heroImage.addEventListener('mouseover', () => {
-    headerAndHeroContainer.classList.add('header_and_hero_container_active');
-    headerAndHeroContainer.classList.remove(
-      'header_and_hero_container_inactive'
-    );
-  });
-
-  heroImage.addEventListener('mouseout', () => {
-    headerAndHeroContainer.classList.remove('header_and_hero_container_active');
-    headerAndHeroContainer.classList.add('header_and_hero_container_inactive');
-  });
-})();
+window.matchMedia('(min-width: 1280px)').addEventListener('change', e => {
+  if (!e.matches) return;
+  mobileMenu.classList.remove('is-open');
+  openMenuBtn.setAttribute('aria-expanded', false);
+});
