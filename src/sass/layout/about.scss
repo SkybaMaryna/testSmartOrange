@@ -21,7 +21,7 @@ flex-direction: column;
     }
 }
 
-.innerConer_image{
+.innerCorner_image{
     display: none;
     width: 270px;
     height:140px;
@@ -41,6 +41,7 @@ flex-direction: column;
     height: 200px;
     @include fonts(12px, 25px, 1.5px, 300);
     font-family: $TTHoves-Light;
+    margin-bottom: 20px;
 
     @include mq (tablet) {
         width: 400px;
@@ -58,4 +59,19 @@ margin-right: 30px;
 .flex {
     display: flex;
     align-items: center;
+  }
+
+.button {
+    gap: 12px;
+    width: 222px;
+    border: none;
+    height: 71px;
+    background-color: $white;
+    justify-content: center;
+
+    &__text {
+     color: $main-grey;
+     @include fonts(12px, 12px, 2.4px);
+     text-transform: uppercase;
+    }
   }
