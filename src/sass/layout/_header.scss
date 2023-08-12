@@ -1,8 +1,9 @@
 .header {
-   position: fixed;
+  //  position: fixed;
   width: 100%;
-  z-index: 200;
+  // z-index: 200;
 }
+
 .logo {
     display: block;
     width: 68px;
@@ -18,13 +19,16 @@
     bottom: 0;
    }
 }
+
 .flex {
     display: flex;
     align-items: center;
   }
+
 .container{
     justify-content: space-between;
 }
+
 .navigations{
     &__list {
         gap: 10px;
