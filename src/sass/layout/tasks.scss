@@ -1,0 +1,67 @@
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+.tasks {
+    &__title {
+        margin-bottom: 30px;
+        @include mq(desktop) {
+            margin-bottom: 60px; 
+        }
+    }
+    &__number {
+        color: $number-color;
+        @include fonts(150px, 200px, 1.5px, 700);
+        font-family: $SFPProDisplay;
+        @include mq(desktop) {
+          @include fonts(200px, 200px, 1.5px, 900);
+        }
+    }
+    &__text {
+      color: $main-grey;
+      @include fonts(16px, 24px, 1.5px);
+      height: 115px;
+
+    @include mq(desktop) {
+        @include fonts(22px, 36px, 1.5px);
+        height: 144px;
+    }
+
+      &--one {
+        width: 250px;
+        @include mq(desktop) {width: 279px;}
+        
+      }
+      &--two {
+        width: 325px;
+        @include mq(desktop) {
+            width: 420px;
+        }
+      }
+    }
+}
+
+.text{
+    &-wrapper {
+        flex-direction: column;
+        align-items: start;
+        align-items: center;
+        justify-content: space-between;
+        
+        @include mq(tablet) {
+            flex-direction: row;
+        }
+    }
+    &-innerwrapper {
+        flex-direction: column;
+
+        @include mq(desktop) {
+            flex-direction: row;
+            gap: 30px;
+        }
+    }
+}
+
+
+
