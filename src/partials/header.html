@@ -1,60 +1,44 @@
 <!-- Header-->
 <header class="header">
-  <div class="container container_header flex">
-    <a class="logo" href="#anchor1">
-      <svg class="icon-logo-mobile" width="45" height="35">
-        <use href="./img/sprite.svg#icon-logo-mobile"></use>
+  <div class="container flex">
+    <a class="logo">
+      <svg class="logo__icon" width="68" height="41">
+        <use href="./img/sprite.svg#icon-logo"></use>
       </svg>
+      <img class="logo__name" src="./img/company.svg" alt="Company name" />
     </a>
 
-    <nav class="navigation flex">
-      <ul class="navigations__list">
-        <li class="navigations__item" id="anemone_link">
-          <a class="navigations__link selected" href="#anchor1">Anemone</a>
+    <nav class="navigation">
+      <ul class="navigations__list flex">
+        <li class="navigations__item">
+          <a class="navigations__link selected">Главная</a>
         </li>
 
         <li class="navigations__item">
-          <a class="navigations__link" href="#anchor2">About us</a>
+          <a class="navigations__link">Галерея</a>
         </li>
 
         <li class="navigations__item">
-          <a class="navigations__link" href="#anchor3">Store</a>
+          <a class="navigations__link">Проекты</a>
         </li>
 
         <li class="navigations__item">
-          <a class="navigations__link" href="#anchor4">Delivery</a>
+          <a class="navigations__link">Сертификаты</a>
         </li>
         <li class="navigations__item">
-          <a class="navigations__link" href="#blog">Blog</a>
+          <a class="navigations__link">Контакты</a>
         </li>
-      </ul>
-    </nav>
-
-    <ul class="contact flex">
-      <li class="contact__list">
-        <a class="contact__link" href="tel:">
-          <svg class="icon-tel-mobile" width="20" height="20">
-            <use href="./img/sprite.svg#icon-tel-mobile"></use>
-          </svg>
-        </a>
-      </li>
-      <li>
-        <button
+        <li><button
           id="open_mobile_menu"
           type="button"
-          class="style_none"
+          class="navigations__button"
           aria-expanded="false"
         >
-          <svg class="icon-tel-mobile" width="22" height="22">
+          <svg class="burger-icon" width="20" height="20">
             <use href="./img/sprite.svg#burger-menu"></use>
           </svg>
-        </button>
-      </li>
-    </ul>
-    <!-- <button type="button" class="js-open-menu style_none" aria-expanded="false">
-      <svg class="icon-tel-mobile" width="18" height="16">
-        <use href="./img/sprite.svg#burger-menu"></use>
-      </svg>
-    </button> -->
+        </button></li>
+      </ul>
+    </nav>
   </div>
 </header>
