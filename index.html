@@ -41,8 +41,8 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.css"
     />
     
-    <script type="module" crossorigin src="/testSmartOrange/assets/index-a3f02a92.js"></script>
-    <link rel="stylesheet" href="/testSmartOrange/assets/index-461a535d.css">
+    <script type="module" crossorigin src="/testSmartOrange/assets/index-30db5308.js"></script>
+    <link rel="stylesheet" href="/testSmartOrange/assets/index-5666aa51.css">
   </head>
 
   <body>
@@ -51,7 +51,7 @@
   <div class="container flex">
     <a class="logo">
       <svg class="logo__icon" width="68" height="41">
-        <use href="/testSmartOrange/assets/sprite-c133e93f.svg#icon-logo"></use>
+        <use href="/testSmartOrange/assets/sprite-9c6f4ab1.svg#icon-logo"></use>
       </svg>
       <img class="logo__name" src="/testSmartOrange/assets/company-6fc8c5e6.svg" alt="Company name" />
     </a>
@@ -79,17 +79,48 @@
         <li><button
           id="open_mobile_menu"
           type="button"
-          class="navigations__button"
+          class="navigations__button js-open-menu"
           aria-expanded="false"
         >
           <svg class="burger-icon" width="20" height="20">
-            <use href="/testSmartOrange/assets/sprite-c133e93f.svg#burger-menu"></use>
+            <use href="/testSmartOrange/assets/sprite-9c6f4ab1.svg#burger-menu"></use>
           </svg>
         </button></li>
       </ul>
     </nav>
   </div>
 </header>
+
+    <div class="burger-menu js-menu-container flex">
+  <nav>
+    <ul class="navigations__list_mb flex">
+      <li class="navigations__item_mb">
+        <a class="navigations__link_mb">Главная</a>
+      </li>
+
+      <li class="navigations__item_mb">
+        <a class="navigations__link_mb">Галерея</a>
+      </li>
+
+      <li class="navigations__item_mb">
+        <a class="navigations__link_mb">Проекты</a>
+      </li>
+
+      <li class="navigations__item_mb">
+        <a class="navigations__link_mb">Сертификаты</a>
+      </li>
+      <li class="navigations__item_mb">
+        <a class="navigations__link_mb">Контакты</a>
+      </li>
+    </ul>
+  </nav>
+
+  <button class="menu-close__btn js-close-menu">
+    <svg class="close-button" stroke="#000" width="24" height="24">
+      <use href="/testSmartOrange/assets/sprite-9c6f4ab1.svg#close-button"></use>
+    </svg>
+  </button>
+</div>
 
 
     

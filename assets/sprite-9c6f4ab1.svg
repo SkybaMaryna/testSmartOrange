@@ -18,6 +18,8 @@
 <symbol id="burger-menu" viewBox="0 0 36 32">
 <path d="M0 0h36v4h-36v-4zM12 14h24v4h-24v-4zM0 28h36v4h-36v-4z"></path>
 </symbol>
-
+<symbol id="close-button" viewBox="0 0 32 32">
+<path fill="none" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2.6667" d="M24 8l-16 16M8 8l16 16"></path>
+</symbol>
 </defs>
 </svg>
