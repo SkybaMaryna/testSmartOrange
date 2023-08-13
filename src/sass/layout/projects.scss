@@ -7,6 +7,7 @@
         
     }
     &__list{
+        @extend %flex-container;
         gap: 30px;
         flex-wrap: wrap;
         justify-content: center;
@@ -44,12 +45,8 @@
     height: 255px;
 }
 
-.flex {
-    display: flex;
-    align-items: center;
-}
-
 .button {
+    @extend %flex-container;
     gap: 12px;
     width: 222px;
     border: none;
@@ -109,6 +106,7 @@ margin-left: 14%;
 
 }
 &__button{
+    @extend %flex-container;
     width: 129px;
     height: 24px;
     border: none;

@@ -9,28 +9,25 @@
 @import './utils/mixins';
 // __________________________!
 
-
-
 // STYLE RESET
 @import './base/style_reset';
 // ____________________________!
-
-
 
 // CONTAINER 
 @import './base/container';
 // ___________________________!
 
-
 // SECTION
 @import './base/section';
 // _________________________!
-
 
 // COMMON
 @import './base/common';
 // ________________________!
 
+// PLACEHOLDERS
+@import './utils/placeholders';
+// ________________________!
 
 //________________________________________________________COMPONENTS
 
@@ -42,12 +39,9 @@
  @import './components/buttons/buttons.scss';
 // _______________________________!
 
-
 // MOBILE_MENU
 @import './components/mobile_menu.scss';
 // __________________________________!
-
-
 
 //__________________________________________________________LAYOUT
 

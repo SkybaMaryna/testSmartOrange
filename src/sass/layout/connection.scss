@@ -1,4 +1,5 @@
 .button {
+    @extend %flex-container;
     gap: 12px;
     width: 222px;
     border: none;
@@ -22,11 +23,6 @@
     }
 }
 
-.flex {
-    display: flex;
-    justify-content: center;
-  }
-
 .connection{
     &__title {
         margin-bottom: 22px;
@@ -36,7 +32,11 @@
         }
     }
     &__wrapper {
+        @extend %flex-container;
         align-items: start;
+        @include mq(tablet-only) {
+           justify-content: center;
+        }
         @include mq(desktop) {
             gap: 30px;
         }
@@ -51,6 +51,7 @@
         }
     }
     &__form {
+       @extend %flex-container;
        flex-direction: column;
        gap: 10px;
     }
@@ -73,8 +74,11 @@
       text-align: center;
       margin-top: 22px;
     }
+    &__picture {
+        @extend %flex-container;
+        flex-shrink: 0;
+      }
 }
-
 
 .input-container {
     position: relative;
@@ -100,6 +104,4 @@
 
     }
   }
-  .connection__picture {
-    flex-shrink: 0;
-  }
+ 
