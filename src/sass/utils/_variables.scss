@@ -5,6 +5,7 @@
 */
 $black: #000000;
 $main-grey: #333;
+$main-grey-80: #333333CC;
 $light-grey: #BDBDBD;
 $dark-grey:#8D8D8D;
 $white: #ffffff;
@@ -26,7 +27,7 @@ $tablet: 768px;
 $pre-desktop: 1439.98px;
 $desktop: 1440px;
 
-$time-dur: 250ms;
+$time-dur: 500ms;
 $time-func: cubic-bezier(0.4, 0, 0.2, 1);
 
 // Font Family

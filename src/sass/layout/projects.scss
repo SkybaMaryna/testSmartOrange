@@ -1,0 +1,134 @@
+.projects {
+    &__title{
+        margin-bottom: 60px;
+        @include mq(tablet-only) {
+            text-align: center;
+        }
+        
+    }
+    &__list{
+        gap: 30px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+.first-image,
+.second-image {
+    width: 570px;
+    height: 255px;
+    display: none;
+
+    @include mq(tablet) {
+        display: block;
+    }
+}
+
+.third-image {
+    width: 270px;
+    height: 255px;
+}
+
+.fourth-image{
+    width: 470px;
+    height: 255px;
+    display: none;
+    
+    @include mq(tablet) {
+        display: block;
+    }
+}
+
+.fifth-image {
+    width: 370px;
+    height: 255px;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+.button {
+    gap: 12px;
+    width: 222px;
+    border: none;
+    height: 71px;
+    background-color: $main-grey;
+    justify-content: center;
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    
+    @include mq(desktop) {margin-right: 0}
+    
+
+    &__text {
+     color: $white;
+     @include fonts(12px, 12px, 2.4px);
+     text-transform: uppercase;
+    }
+    &__icon{
+        fill: $white;
+    }
+}
+
+.image {
+&__thumb {
+    position: relative;
+    overflow: hidden;
+
+    &:hover .image__overlay,
+    &:focus .image__overlay {
+        transform: translateY(0);
+    }
+}
+&__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: $main-grey-80;
+    
+    transform: translateX(-100%);
+    transition: transform $time-dur $time-func;
+}
+&__text {
+color: $white;
+@include fonts(64px, 64px, 1.5px, 700);
+font-family: $TTHoves-Bold;
+text-transform: uppercase;
+margin-bottom: 8px;
+margin-top: 10%;
+margin-left: 14%;
+&--small {
+    @include fonts(40px, 64px, 1.5px, 700);
+}
+
+}
+&__button{
+    width: 129px;
+    height: 24px;
+    border: none;
+    background-color: transparent;
+    justify-content: center;
+    gap: 12px;
+    cursor: pointer;
+    margin-left: 14%;
+}
+}
+
+.img-button {
+&__text {
+color: $white;
+@include fonts(12px, 12px, 2.4px, 400);
+font-family: $GothicA1;
+text-transform: uppercase;
+    }
+    &__icon {
+        fill: $white;
+    }
+}
+
