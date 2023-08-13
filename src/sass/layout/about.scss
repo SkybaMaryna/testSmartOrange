@@ -76,3 +76,7 @@
      text-transform: uppercase;
     }
   }
+.about-wrapper{ 
+    @extend %flex-container;
+    flex-direction: column;
+}
