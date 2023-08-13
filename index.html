@@ -41,14 +41,14 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.css"
     />
     
-    <script type="module" crossorigin src="/testSmartOrange/assets/index-96345391.js"></script>
-    <link rel="stylesheet" href="/testSmartOrange/assets/index-781b1e66.css">
+    <script type="module" crossorigin src="/testSmartOrange/assets/index-4b683357.js"></script>
+    <link rel="stylesheet" href="/testSmartOrange/assets/index-61a12b50.css">
   </head>
 
   <body>
     <!-- Header-->
 <header class="header">
-  <div class="container flex">
+  <div class="container header__container">
     <a class="logo">
       <svg class="logo__icon" width="68" height="41">
         <use href="/testSmartOrange/assets/sprite-8c849fe8.svg#icon-logo"></use>
@@ -57,7 +57,7 @@
     </a>
 
     <nav class="navigation">
-      <ul class="navigations__list flex">
+      <ul class="navigations__list">
         <li class="navigations__item">
           <a class="navigations__link selected">Главная</a>
         </li>
@@ -92,9 +92,9 @@
 </header>
 
     <section class="section ">
-  <div class="container about-container flex">
-    <div class="image-wrapper flex">
-      <div class="image-innerwrapper flex">
+  <div class="container about__container">
+    <div class="image-wrapper">
+      <div class="image-innerwrapper">
     <picture>
       <source
         media="(min-width: 375px)"
@@ -137,7 +137,7 @@
   <div class="text-wrapper">
     <h2 class="about__title title">О компании</h2>
     <p class="about__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
-  <button class="button flex">
+  <button class="button">
     <span class="button__text">Читать</span>
     <svg class="button__icon" width="24" height="24">
       <use href="/testSmartOrange/assets/sprite-8c849fe8.svg#icon-arrow"></use>
@@ -149,14 +149,14 @@
     <section class="section">
   <div class="container tasks-container">
     <h2 class="tasks__title title">Основные задачи</h2>
-    <div class="text-wrapper flex">
-      <div class="text-innerwrapper flex">
+    <div class="text-wrapper">
+      <div class="text-innerwrapper">
         <p class="tasks__number">1</p>
         <p class="tasks__text tasks__text--one">
           Создание комфортных условий и повышение качества обслуживания клиентов
         </p>
       </div>
-      <div class="text-innerwrapper flex">
+      <div class="text-innerwrapper">
         <p class="tasks__number">2</p>
         <p class="tasks__text tasks__text--two">
           Постоянно совершенствовать качество предоставляемых услуг путем
@@ -171,7 +171,7 @@
     <section class="section">
   <div class="container">
     <h2 class="projects__title title">Наши проекты</h2>
-    <ul class="projects__list flex">
+    <ul class="projects__list">
       <li class="image__thumb first-image">
         <picture>
           <source
@@ -187,7 +187,7 @@
         </picture>
         <div class="image__overlay">
           <p class="image__text">Досуговый центр</p>
-          <button class="image__button flex">
+          <button class="image__button">
             <span class="img-button__text">Подробнее</span
             ><svg class="img-button__icon" width="24" height="24">
               <use href="/testSmartOrange/assets/sprite-8c849fe8.svg#icon-arrow"></use>
@@ -210,7 +210,7 @@
         </picture>
         <div class="image__overlay">
             <p class="image__text">Опера</p>
-            <button class="image__button flex">
+            <button class="image__button">
               <span class="img-button__text">Подробнее</span
               ><svg class="img-button__icon" width="24" height="24">
                 <use href="/testSmartOrange/assets/sprite-8c849fe8.svg#icon-arrow"></use>
@@ -233,7 +233,7 @@
         </picture>
         <div class="image__overlay">
             <p class="image__text image__text--small">Стадион</p>
-            <button class="image__button flex">
+            <button class="image__button">
               <span class="img-button__text">Подробнее</span
               ><svg class="img-button__icon" width="24" height="24">
                 <use href="/testSmartOrange/assets/sprite-8c849fe8.svg#icon-arrow"></use>
@@ -256,7 +256,7 @@
         </picture>
         <div class="image__overlay">
             <p class="image__text">Жилой комплекс</p>
-            <button class="image__button flex">
+            <button class="image__button">
               <span class="img-button__text">Подробнее</span
               ><svg class="img-button__icon" width="24" height="24">
                 <use href="/testSmartOrange/assets/sprite-8c849fe8.svg#icon-arrow"></use>
@@ -279,7 +279,7 @@
         </picture>
         <div class="image__overlay">
             <p class="image__text">Музей</p>
-            <button class="image__button flex">
+            <button class="image__button">
               <span class="img-button__text">Подробнее</span
               ><svg class="img-button__icon" width="24" height="24">
                 <use href="/testSmartOrange/assets/sprite-8c849fe8.svg#icon-arrow"></use>
@@ -288,7 +288,7 @@
           </div>
       </li>
     </ul>
-    <button class="button flex">
+    <button class="button">
       <span class="button__text">Все проекты</span>
       <svg class="button__icon" width="24" height="24">
         <use href="/testSmartOrange/assets/sprite-8c849fe8.svg#icon-arrow"></use>
@@ -300,8 +300,8 @@
     <section class="section">
   <div class="container">
     <h2 class="connection__title title">Связаться с нами</h2>
-    <div class="connection__wrapper flex">
-      <form class="connection__form flex">
+    <div class="connection__wrapper">
+      <form class="connection__form">
         <input
           class="connection__input"
           type="text"
@@ -345,14 +345,14 @@
           <span class="required required--message">*</span>
         </div>
         <p class="connection__text">Отправляя заявку Вы соглашаетесь с политикой конфиденциальности</p>
-        <button class="button flex" type="submit">
+        <button class="button" type="submit">
           <span class="button__text">Отправить</span>
           <svg class="button__icon" width="24" height="24">
             <use href="/testSmartOrange/assets/sprite-8c849fe8.svg#icon-arrow"></use>
           </svg>
         </button>
       </form>
-      <picture class="connection__picture flex">
+      <picture class="connection__picture">
         <source
           media="(min-width: 375px)"
           srcset="/testSmartOrange/assets/image1-1c856c1d.jpg , /testSmartOrange/assets/image1@2x-607fc3b5.jpg 2x"
@@ -368,9 +368,9 @@
   </div>
 </section>
 
-    <div class="burger-menu js-menu-container flex">
+    <div class="burger-menu js-menu-container">
   <nav>
-    <ul class="navigations__list_mb flex">
+    <ul class="navigations__list_mb">
       <li class="navigations__item_mb">
         <a class="navigations__link_mb">Главная</a>
       </li>
