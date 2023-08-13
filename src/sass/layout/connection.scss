@@ -1,0 +1,105 @@
+.button {
+    gap: 12px;
+    width: 222px;
+    border: none;
+    height: 71px;
+    background-color: $main-grey;
+    justify-content: center;
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 21px;
+    
+    @include mq(desktop) {margin-left: 0}
+    
+    &__text {
+     color: $white;
+     @include fonts(12px, 12px, 2.4px);
+     text-transform: uppercase;
+    }
+    &__icon{
+        fill: $white;
+    }
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+  }
+
+.connection{
+    &__title {
+        margin-bottom: 22px;
+
+        @include mq(tablet-only) {
+            text-align: center;
+        }
+    }
+    &__wrapper {
+        align-items: start;
+        @include mq(desktop) {
+            gap: 30px;
+        }
+    }
+    &__image {
+        width: 749px;
+        height: 369px;
+        display: none;
+    
+        @include mq(desktop) {
+            display: block;
+        }
+    }
+    &__form {
+       flex-direction: column;
+       gap: 10px;
+    }
+    &__input {
+        width: 100%;
+        background-color: $input-color;
+        padding: 15px 21px;
+        border: none;
+        outline: none;
+        transition: background-color $time-dur $time-func;
+
+        &:hover,
+        &:focus {
+            background-color: $light-grey; 
+        }
+    }
+    &__text{
+      color: $main-grey;
+      @include fonts(14px, 14px, 0.42px);
+      text-align: center;
+      margin-top: 22px;
+    }
+}
+
+
+.input-container {
+    position: relative;
+    width: 100%;
+  }
+
+.required {
+    position: absolute;
+    top: 50%;
+    color: $red;
+    transform: translateY(-50%);
+    transition: opacity 0.2s;
+
+    &--phone{
+        left: 145px;
+    }
+    &--email{
+        left: 68px;
+    }
+    &--message{
+        top: 23px;
+        left: 110px;
+
+    }
+  }
+  .connection__picture {
+    flex-shrink: 0;
+  }

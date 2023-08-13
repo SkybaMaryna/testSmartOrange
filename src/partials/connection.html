@@ -1,0 +1,73 @@
+<section class="section">
+  <div class="container">
+    <h2 class="connection__title title">Связаться с нами</h2>
+    <div class="connection__wrapper flex">
+      <form class="connection__form flex">
+        <input
+          class="connection__input"
+          type="text"
+          name="username"
+          placeholder="Имя"
+        />
+        <div class="input-container">
+          <input
+            class="connection__input"
+            type="tel"
+            name="userphone"
+            required
+            placeholder="Номер телефона"
+          />
+          <span class="required required--phone">*</span>
+        </div>
+        <div class="input-container">
+          <input
+            class="connection__input"
+            type="email"
+            name="useremail"
+            required
+            placeholder="E-mail"
+          />
+          <span class="required required--email">*</span>
+        </div>
+        <input
+          class="connection__input"
+          type="text"
+          name="userorder"
+          placeholder="Интересующий товар/услуга"
+        />
+        <div class="input-container">
+          <textarea
+            class="connection__input connection__input--textarea"
+            name="feedback"
+            rows="5"
+            required
+            placeholder="Сообщение"
+          ></textarea>
+          <span class="required required--message">*</span>
+        </div>
+        <p class="connection__text">Отправляя заявку Вы соглашаетесь с политикой конфиденциальности</p>
+        <button class="button flex" type="submit">
+          <span class="button__text">Отправить</span>
+          <svg class="button__icon" width="24" height="24">
+            <use href="./img/sprite.svg#icon-arrow"></use>
+          </svg>
+        </button>
+      </form>
+      <picture class="connection__picture flex">
+        <source
+          media="(min-width: 375px)"
+          srcset="
+            ./img/connection/image1.jpg,
+            ./img/connection/image1@2x.jpg 2x
+          "
+          type="image/jpg"
+        />
+        <img
+          class="connection__image"
+          src="./img/connection/image1.jpg"
+          alt="man talking on the phone"
+        />
+      </picture>
+    </div>
+  </div>
+</section>
