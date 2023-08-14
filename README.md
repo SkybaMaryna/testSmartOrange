@@ -1,11 +1,11 @@
 Digital Project
 
 Technology that have been used:
-HTML
+HTML,
 CSS,
-SASS(SCSS)
-JavaScript
-Vite
-SVG
-Git
+SASS(SCSS),
+JavaScript,
+Vite,
+SVG,
+Git,
 AOS
