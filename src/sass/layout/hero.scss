@@ -1,0 +1,103 @@
+.title--hero{
+text-transform: uppercase;
+}
+.subtitle {
+    color: $main-grey;
+    @include fonts(64px, 64px,1.5px, 700);
+    font-family: $TTHoves-Bold;
+    text-transform: uppercase;
+}
+
+.hero {
+    &__container {
+        @extend %flex-container;
+        flex-direction: column;
+        gap: 20px;
+        @include mq(desktop) {
+            flex-direction: row;
+            gap: 122px;
+        }
+    }
+    &__title{
+        margin-top: 20px;
+        margin-bottom: 20px;
+        @include mq(desktop) {
+            margin-bottom: 105px;
+            margin-top: 0;
+        }
+
+       
+    }
+    &__image{
+         width: 770px;
+         height: 829px;
+    }
+    &__list{
+        display: none;
+        @include mq(desktop) {
+            display: block;
+        }
+    }
+    &__defimage{
+    width: 350px;
+    @include mq(tablet) {
+        width: 650px;
+    }
+    @include mq(desktop) {
+        display: none;
+    }
+    }
+    &__item{
+    position: relative;
+    }
+    &__btn {
+    @extend %flex-container;
+    justify-content: center;
+
+    width: 53px;
+    height: 53px;
+    border: 1px solid $number-color;
+    outline: none;
+    background-color: $white;
+    transition: background-color $time-dur $time-func;
+
+    &:hover {
+        background-color: $slider-btn-color; 
+    }
+    }
+}
+
+.light-button {
+&--hero{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+&--defimage{
+    @include mq(desktop) {
+        display: none;
+    }
+}
+}
+
+
+.swiper-pagination--custom  {
+    display: none;
+    @include mq(desktop) {
+        display: block;
+    }
+   color: $light-grey;
+   @include fonts(24px, 24px, 10px);
+}
+
+.button {
+    &__wrapper{
+        display: none;
+        @extend %flex-container;
+        gap: 23px;
+        margin-bottom: 94px;
+    @include mq(desktop) {
+        display: flex;
+    }
+    }
+}

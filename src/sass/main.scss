@@ -9,6 +9,10 @@
 @import './utils/mixins';
 // __________________________!
 
+// PLACEHOLDERS
+@import './utils/placeholders';
+// ________________________!
+
 // STYLE RESET
 @import './base/style_reset';
 // ____________________________!
@@ -25,10 +29,6 @@
 @import './base/common';
 // ________________________!
 
-// PLACEHOLDERS
-@import './utils/placeholders';
-// ________________________!
-
 //________________________________________________________COMPONENTS
 
 // TITLE 
@@ -36,7 +36,7 @@
 // ___________________________!
 
 // BUTTONS
- @import './components/buttons/buttons.scss';
+ @import './components/buttons.scss';
 // _______________________________!
 
 // MOBILE_MENU
@@ -47,6 +47,10 @@
 
 // HEADER
 @import './layout/header';
+// ________________________!
+
+// HERO
+@import './layout/hero';
 // ________________________!
 
 // ABOUT

@@ -1,0 +1,52 @@
+.light-button {
+    @extend %button;
+    background-color: $white;
+    transition: background-color $time-dur $time-func;
+    &__text {
+        color: $main-grey;
+        @include fonts(12px, 12px, 2.4px);
+        text-transform: uppercase;
+        transition: color $time-dur $time-func;
+    }
+    &__icon{
+        fill: $main-grey;
+        transition: fill $time-dur $time-func;
+    }
+
+    &:hover,
+    &:focus {
+        background-color: $main-grey;
+        .light-button__text {
+            color: $white;
+        }
+        .light-button__icon{
+            fill: $white;
+        }
+    }
+}
+
+.dark-button {
+    @extend %button;
+    background-color: $main-grey;
+    transition: background-color $time-dur $time-func;
+    &__text {
+        color: $white;
+        @include fonts(12px, 12px, 2.4px);
+        text-transform: uppercase;
+        transition: color $time-dur $time-func;
+    }
+    &__icon{
+        fill: $white;
+        transition: fill $time-dur $time-func;
+    }
+    &:hover,
+    &:focus {
+        background-color: $white;
+        .dark-button__text {
+            color: $main-grey;
+        }
+        .dark-button__icon{
+            fill: $main-grey;
+        }
+    }
+}

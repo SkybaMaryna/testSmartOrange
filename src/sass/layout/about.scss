@@ -61,21 +61,6 @@
     margin-right: 30px;
 }
 
-.button {
-    gap: 12px;
-    width: 222px;
-    border: none;
-    height: 71px;
-    background-color: $white;
-    justify-content: center;
-    @extend %flex-container;
-
-    &__text {
-     color: $main-grey;
-     @include fonts(12px, 12px, 2.4px);
-     text-transform: uppercase;
-    }
-  }
 .about-wrapper{ 
     @extend %flex-container;
     flex-direction: column;

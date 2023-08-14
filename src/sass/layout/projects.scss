@@ -45,29 +45,13 @@
     height: 255px;
 }
 
-.button {
-    @extend %flex-container;
-    gap: 12px;
-    width: 222px;
-    border: none;
-    height: 71px;
-    background-color: $main-grey;
-    justify-content: center;
-    cursor: pointer;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 30px;
-    
-    @include mq(desktop) {margin-right: 0}
-    
-
-    &__text {
-     color: $white;
-     @include fonts(12px, 12px, 2.4px);
-     text-transform: uppercase;
-    }
-    &__icon{
-        fill: $white;
+.dark-button{
+    &--projects {
+        margin-left: auto;
+            margin-right: auto;
+            margin-top: 30px;
+            
+            @include mq(desktop) {margin-right: 0}
     }
 }
 

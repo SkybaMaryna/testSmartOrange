@@ -1,0 +1,97 @@
+<section class="section">
+  <div class="container hero__container">
+    <div class="hero__sidewrapper">
+      <h1 class="hero__title">
+        <span class="title title--hero">Project</span><br /><span
+          class="subtitle"
+          >Home</span
+        >
+      </h1>
+      <div class="button__wrapper">
+        <button
+          class="hero__btn hero__btn--left"
+          type="button"
+          aria-label="arrow left"
+        >
+          <svg class="hero__icon--left" width="24" height="24">
+            <use href="./img/sprite.svg#icon-arrow-left"></use>
+          </svg>
+        </button>
+        <button
+          class="hero__btn hero__btn--right"
+          type="button"
+          aria-label="arrow right"
+        >
+          <svg class="hero__icon--right" width="24" height="24">
+            <use href="./img/sprite.svg#icon-arrow"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="swiper-pagination--custom"></div>
+    </div>
+    <div class="hero__item">
+        <picture>
+          <source
+            media="(min-width: 375px)"
+            srcset="./img/hero/hero-img.jpg, ./img/hero/hero-img@2x.jpg 2x"
+            type="image/jpg"
+          />
+          <img
+            class="hero__defimage"
+            src="./img/hero/hero-img.jpg"
+            alt="wall of the building"
+          />
+        </picture>
+        <button class="light-button light-button--hero light-button--defimage">
+          <span class="light-button__text">Взглянуть</span>
+          <svg class="light-button__icon" width="24" height="24">
+            <use href="./img/sprite.svg#icon-arrow"></use>
+          </svg>
+        </button>
+      </div>
+    <div class="hero__list swiper">
+      <div class="swiper-wrapper">
+        <div class="hero__item swiper-slide">
+          <picture>
+            <source
+              media="(min-width: 375px)"
+              srcset="./img/hero/hero-img.jpg, ./img/hero/hero-img@2x.jpg 2x"
+              type="image/jpg"
+            />
+            <img
+              class="hero__image"
+              src="./img/hero/hero-img.jpg"
+              alt="wall of the building"
+            />
+          </picture>
+          <button class="light-button light-button--hero">
+            <span class="light-button__text">Взглянуть</span>
+            <svg class="light-button__icon" width="24" height="24">
+              <use href="./img/sprite.svg#icon-arrow"></use>
+            </svg>
+          </button>
+        </div>
+        <div class="hero__item swiper-slide">
+          <picture>
+            <source
+              media="(min-width: 375px)"
+              srcset="./img/hero/hero-img2.jpg"
+              type="image/jpg"
+            />
+            <img
+              class="hero__image"
+              src="./img/hero/hero-img2.jpg"
+              alt="residential complex"
+            />
+          </picture>
+          <button class="light-button light-button--hero">
+            <span class="light-button__text">Взглянуть</span>
+            <svg class="light-button__icon" width="24" height="24">
+              <use href="./img/sprite.svg#icon-arrow"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
